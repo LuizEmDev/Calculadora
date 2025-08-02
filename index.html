@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Moderna</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <h1 class="calculator-title">CALCULADORA</h1>
+            
+            <div class="operation-buttons">
+                <div class="button-row">
+                    <button class="op-button" onclick="showOperation(1)">SOMA</button>
+                    <button class="op-button" onclick="showOperation(2)">POTÊNCIA</button>
+                </div>
+                <div class="button-row">
+                    <button class="op-button" onclick="showOperation(3)">MULTIPLICAÇÃO</button>
+                    <button class="op-button" onclick="showOperation(4)">DIVISÃO</button>
+                </div>
+                <div class="button-row">
+                    <button class="op-button" onclick="showOperation(5)">SUBTRAÇÃO</button>
+                    <button class="op-button" onclick="showOperation(6)">MÓDULO</button>
+                </div>
+                <div class="button-row">
+                    <button class="op-button" onclick="showOperation(7)">DIVISÃO INTEIRA</button>
+                    <button class="op-button" onclick="showOperation(8)">RAIZ QUADRADA</button>
+                </div>
+            </div>
+            
+            <div id="input-fields" class="input-section">
+                <div id="num1-field" class="input-field">
+                    <label>DIGITE UM NÚMERO:</label>
+                    <input type="number" id="num1" class="number-input">
+                </div>
+                <div id="num2-field" class="input-field">
+                    <label>DIGITE OUTRO NÚMERO:</label>
+                    <input type="number" id="num2" class="number-input">
+                </div>
+                <div id="single-num-field" class="input-field">
+                    <label>DIGITE UM NÚMERO:</label>
+                    <input type="number" id="single-num" class="number-input">
+                </div>
+            </div>
+            
+            <button id="calculate-btn" class="calculate-button">CALCULAR</button>
+            
+            <div id="result-display" class="result-display"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
